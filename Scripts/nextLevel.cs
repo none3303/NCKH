@@ -13,7 +13,7 @@ public class nextLevel : MonoBehaviour
             if (canComplete)
             {
                 collision.gameObject.GetComponent<PlayerController>().OnLock();
-                DontDestroyOnLoad(collision.gameObject);
+                //DontDestroyOnLoad(collision.gameObject);
                 Invoke("LoadNextMap", 2f);
                 collision.gameObject.GetComponent<PlayerController>().Unlock();
             }

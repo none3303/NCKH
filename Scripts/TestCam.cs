@@ -8,7 +8,7 @@ public class TestCam : MonoBehaviour
 {
     CinemachineVirtualCamera cam;
     private Transform player;
-    void Awake()
+    void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         cam = GetComponent<CinemachineVirtualCamera>();
